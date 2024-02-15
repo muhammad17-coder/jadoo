@@ -1,0 +1,213 @@
+.banner{
+  @include flex();
+  position: relative;
+
+  @include media (550){
+    flex-direction: column;
+  }
+
+  &-text{
+    margin-top: 134px;
+    @include flex();
+    flex-direction: column;
+    gap: 28px;
+
+
+    @include media (1220){
+      margin-top: 100px;
+    }
+
+    @include media (1024){
+      margin-top: 60px;
+    }
+
+    @include media (768){
+      margin-top: 40px;
+    }
+    @include media (700){
+      margin-top: 20px;
+      gap: 20px;
+    }
+    @include media (550){
+      order: 2;
+    }
+
+
+    &-toptitle__h2{
+      color: #DF6951;
+      font-family: $poppins;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      @include media (1220){
+        font-size: 18px;
+      }
+
+      @include media (1024){
+        font-size: 16px;
+      }
+
+      @include media (1024){
+        font-size: 14px;
+      }
+
+    }
+
+    &-title__h1{
+      width: 545px;
+      color: $main-color;
+      font-family: $volkhov;
+      font-size: 84px;
+      font-weight: 700;
+      line-height: 105.952%;
+
+      @include media (1220){
+        font-size: 68px;
+      }
+
+      @include media (1024){
+        width: 400px;
+        font-size: 46px;
+      }
+
+      @include media (700){
+        width: 300px;
+        font-size: 42px;
+      }
+    }
+
+    &-subtitle__p{
+      width: 477px;
+      color: #5E6282;
+      font-family: $poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 187.5%;
+
+      @include media (1220){
+        font-size: 14px;
+      }
+      @include media (1024){
+        width: 300px;
+        font-size: 12px;
+      }
+      @include media (700){
+        width: 260px;
+        font-size: 10px;
+        line-height: 170%;
+      }
+    }
+  }
+
+  &-img{
+    @include flex(center,center);
+
+    &-women{
+      width: 100%;
+    }
+
+  }
+
+  &-buttons{
+    @include flex(center);
+    gap: 44px;
+
+    @include media (700){
+      gap: 28px;
+    }
+  }
+
+  &-button-one{
+    color: #FFF;
+    text-align: center;
+    font-family: $google-sans;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 17px 25px;
+    border: 1px solid #F1A501;
+    border-radius: 10px;
+    background-color: #F1A501;
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    transition: all 0.2s ease-in-out;
+
+    @include media (1220){
+      padding: 15px 23px;
+    }
+    @include media (1024){
+      padding: 13px 21px;
+      font-size: 14px;
+    }
+    @include media (700){
+      padding: 12px 20px;
+      font-size: 11px;
+      border-radius: 6px;
+    }
+
+    &:hover{
+      color: #F1A501;
+      background-color: #FFF;
+      box-shadow: 0px 25px 35px 0px rgba(241, 165, 1, 0.262);
+    }
+  }
+
+  &-button-two{
+    color: #686D77;
+    font-family: $poppins;
+    font-size: 17px;
+    font-weight: 500;
+    @include flex(center);
+    gap: 20px;
+    border-radius: 10px;
+    padding: 4px 8px;
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+
+    svg{
+      transition: all 0.2s ease-in-out;
+    }
+
+    @include media (1220){
+     padding: 3px 7px;   
+    }
+
+    @include media (1024){
+      font-size: 14px;
+      padding: 2px 5px;
+      gap: 16px;
+    }
+
+    @include media (700){
+      font-size: 11px;
+      gap: 12px;
+      padding: 2px 4px;
+      border-radius: 6px;
+    }
+
+    &:hover {
+      color: #F1A501;
+
+      svg{
+        fill: #F1A501;
+        box-shadow: 0px 15px 25px 0px rgba(241, 165, 1, 0.262);
+      }
+    }
+
+
+    & svg{
+      fill: #df6951;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+
+      @include media (1024){
+        width: 40px;
+        height: 40px;
+      }
+      @include media (700){
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

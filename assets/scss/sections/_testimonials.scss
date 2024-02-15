@@ -1,0 +1,105 @@
+.testimonials{
+  @include flex();
+  justify-content: space-between;
+
+  @include media(550){
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &-text{
+
+    svg{
+      margin-top: 80px;
+
+      @include media(550){
+        width: 60px;
+        height: 10px;
+        margin-top: 40px;
+      }
+
+      @include media(375){
+        width: 40px;
+        height: 8px;
+        margin-top: 20px;
+      }
+    }
+
+    &__p{
+      color: #5E6282;
+      font-family: $poppins;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      @include media (900){
+        font-size: 14px;
+      }
+      @include media (768){
+        font-size: 12px;
+      }
+      @include media (440){
+        font-size: 10px;
+      }
+    }
+
+    &__h1{
+      color: #14183E;
+      font-family: $volkhov;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-top: 8px;
+
+      @include media (1024){
+        font-size: 40px;
+      }
+      @include media (900){
+        font-size: 38px;
+      }
+      @include media (768){
+        font-size: 44px;
+      }
+      @include media (440){
+        font-size: 36px; 
+      }
+      @include media (375){
+        font-size: 28px; 
+      }
+    }
+
+  }
+
+  &-content{
+    width: 700px;
+    height: 500px;
+
+      @include media (1024){
+        width: 600px;
+        height: 400px;
+      }
+      @include media (900){
+        width: 500px;
+        height: 300px;
+      }
+      @include media (550){
+        width: 100%;
+        height: 360px;
+      }
+      @include media (440){
+        width: 100%;
+        height: 300px;
+      }
+      @include media (375){
+        width: 100%;
+        height: 240px;
+      }
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

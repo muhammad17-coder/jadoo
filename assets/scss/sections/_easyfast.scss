@@ -1,0 +1,162 @@
+.easy_fast{
+  @include flex(center, space-between);
+
+  @include media (550){
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+  &-text{
+    width: 512px;
+    @include flex();
+    flex-direction: column;
+
+    @include media (768){
+      width: 350px;
+    }
+
+    @include media (440){
+      width: 320px;
+    }
+
+
+    &__p{
+      color: #5E6282;
+      font-family: $poppins;
+      font-size: 18px;
+      font-weight: 600;
+  
+        @include media (900){
+          font-size: 14px;
+        }
+        @include media (768){
+          font-size: 12px;
+        }
+        @include media (440){
+          font-size: 10px;
+        }
+    }
+
+    &__title{
+      color: #14183E;
+      font-family: $volkhov;
+      font-size: 50px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+
+      @include media (1024){
+        font-size: 40px;
+      }
+      @include media (900){
+        font-size: 38px;
+      }
+      @include media (768){
+        font-size: 34px;
+      }
+      @include media (440){
+        font-size: 28px; 
+      }
+      @include media (375){
+        font-size: 22px; 
+      }
+    }
+
+    &__categoris{
+      @include flex(center);
+      gap: 22px;
+
+      &_content__title{
+        color: #5E6282;
+        font-family: $poppins;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 124.5%;
+
+        @include media (900){
+          font-size: 14px; 
+        }
+        @include media (768){
+          font-size: 12px; 
+        }
+        @include media (440){
+          font-size: 10px; 
+        }
+
+      }
+
+      &_content__subtitle{
+        width: 326px;
+        color: #5E6282;
+        font-family: $poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 124.5%;
+
+        @include media (900){
+          width: 280px;
+          font-size: 12px; 
+        }
+        @include media (440){
+          width: 260px;
+        }
+      }
+
+      svg{
+        @include media (900){
+          width: 44px;
+          height: 44px;
+        }
+        @include media (768){
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  &-content{
+    @include flex();
+    flex-direction: column;
+    gap: 40px;
+
+    @include media (768){
+      gap: 28px;
+    }
+
+  }
+
+    &-img{
+    width: 100%;
+    height: 700px;
+
+      @include media (900){
+        width: 620px;
+        height: 600px;
+      }
+      @include media (768){
+        width: 520px;
+        height: 500px;
+      }
+      @include media (550){
+        width: 100%;
+        // width: 540px;
+        height: 500px;
+      }
+      @include media (440){
+        width: 100%;
+        height: 500px;
+      }
+      @include media (375){
+        width: 100%;
+        height: 360px;
+      }
+
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

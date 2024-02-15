@@ -1,0 +1,161 @@
+.header{
+  padding: 40px 0;
+
+  & img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    
+  }
+
+  @include media(440){
+    padding: 20px 0;
+  }
+
+  &-row{
+    @include flex (center, space-between);
+  }
+
+  &-logo{
+
+    & svg{
+      @include media(440){
+        width: 100px;
+      }
+    }
+
+  }
+
+  &-nav{
+    display: flex;
+    gap: 55px;
+
+    @include media(1024){
+      gap: 40px;
+    }
+    @include media(900){
+      gap: 20px;
+    }
+
+    @include media(768){
+      display: none;
+    }
+  }
+
+  &-link{
+    color: $main-color;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: $google-sans;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      color: #f05d3f;
+    }
+  }
+  &-link:not(:last-child){
+    margin-right: 20px;
+
+    @include media(900){
+      margin-right: 12px;
+    }
+  }
+
+  &-login{
+    @include flex(center);
+    gap: 40px;
+
+    @include media(900){
+      gap: 20px;
+    }
+
+
+  }
+
+  &-in{
+    font-family: $google-sans;
+    color: $main-color;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
+    @include media(768){
+      font-size: 14px;
+    }
+
+    @include media(440){
+      display: none;
+    }
+
+    &:hover{
+      color: #f05d3f;
+    }
+  }
+
+  &-sign_in{
+    @include media(440){
+      display: none;
+    }
+
+
+    &-button{
+      font-family: $google-sans;
+      color: $main-color;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 9px 22px;
+      border: 1px solid #212832;
+      border-radius: 5px;
+      transition: all 0.2s ease-in-out;
+
+      @include media(768){
+        font-size: 14px;
+        padding: 6px 18px;
+      }
+
+      &:hover{
+        background: #f05d3f;
+        border-color: #fff;
+      }
+    }
+  }
+
+  &-lan{
+    @include media(440){
+      display: none;
+    }
+
+    p{
+      color: $main-color;
+      font-size: 17px;
+      font-weight: 500;
+      font-family: $google-sans;
+      @include flex(center);
+      gap: 5px;
+      cursor: pointer;
+
+      @include media(768){
+        font-size: 14px;
+      }
+
+      &:hover{
+        color: #f05d3f;
+      }
+
+      &:hover svg path{
+        stroke: #f05d3f;
+      }
+    }
+  }
+
+  &-navbar{
+    display: none;
+
+    @include media(768){
+      display: block;
+    }
+  }
+}

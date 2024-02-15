@@ -1,0 +1,11 @@
+@mixin flex($aling: unset, $justify: unset){
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+}
+
+@mixin media($width ){
+  @media screen and (max-width: #{$width}px) {
+    @content;
+  }
+}

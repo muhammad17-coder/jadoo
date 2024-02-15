@@ -1,0 +1,90 @@
+.airplans{
+  @include flex(center, space-between);
+
+  &-link{
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+
+    @include media(900){
+      padding: 18px 32px;
+      border-radius: 10px;
+    }
+    @include media(768){
+      padding: 12px 26px;
+    }
+    @include media(550){
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+    @include media(440){
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+    @include media(375){
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    img{
+
+      @include media(1100){
+        width: 100px;
+        height: 28px;
+      }
+      @include media(1024){
+        width: 100px;
+        height: 28px;
+      }
+      @include media(900){
+        width: 80px;
+        height: 24px;
+      }
+      @include media(768){
+        width: 56px;
+        height: 20px;
+      }
+      @include media(550){
+        width: 44px;
+        height: 16px;
+      }
+      @include media(440){
+        width: 44px;
+        height: 16px;
+      }
+      @include media(375){
+      width: 40px;
+      height: 12px;
+      }
+    }
+
+    &:nth-child(3){
+      padding: 15px 40px;
+
+      @include media(900){
+        padding: 18px 32px;
+        border-radius: 10px;
+      }
+      @include media(768){
+        padding: 12px 26px;
+        border-radius: 12px;
+      }
+      @include media(550){
+        padding: 8px 16px;
+        border-radius: 8px;
+      }
+      @include media(440){
+        padding: 6px 14px;
+        border-radius: 6px;
+      }
+      @include media(375){
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+    }
+
+    &:hover{
+      box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    }
+  }
+}
